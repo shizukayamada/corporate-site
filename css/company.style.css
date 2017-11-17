@@ -99,13 +99,17 @@ header {
   padding: 80px 0;
   background-image: url("../images/top/sub_cover.jpg");
   background-size: cover; }
- h1{
+@media (min-width: 550px){
+
+#cover_area h1 {
     text-align: center;
-    color: #ffffff;
-    font-size: 40px;
+    color: white;
+   
+    font-size: 3.2rem;
     font-weight: bold;
     margin: 0;
-    letter-spacing: 2.5px; }
+    letter-spacing: 0.2rem;
+}}
   @media screen and  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #cover_area {
       background-image: url("../images/top/sub_cover@2x.jpg");} }    
@@ -128,18 +132,21 @@ header {
     letter-spacing: 0.2rem; } }
  
  /* sub_cover*/
- @media (min-width: 550px){
+  @media (min-width: 550px){
     #contents {
-    padding-top: 35px;
-    padding-bottom: 70px; }
-    
-    h2 {
-      font-weight: bold;
-      font-size: 25px;
-      color: #42b9d0;
-      border-bottom-style: solid;
-      border-bottom-width: 3px; 
-      padding-top: 20px; }
+     padding-top: 35px;
+     padding-bottom: 70px; }
+    #contents #main h2 {
+     font-size: 20px;
+     font-size: 2rem;
+     padding-bottom: 20px; }
+    #contents #main h2 {
+     color: #42b9d0;
+     border-bottom: 3px solid #42b9d0;
+     font-size: 15px;
+     font-size: 2rem;
+     font-weight: bold;
+     padding-bottom: 15px; }
       
      /*#sub_cover .tr {*/
      /* font-size: 18.75px; */
@@ -153,72 +160,65 @@ header {
      /* padding-bottom: 20px;*/
      /*}*/
     #contents #main th, #contents #main td {
-    padding: 20px 0;
-    color: #626262;
-    font-size: 1.4rem; }
+     padding: 20px 0;
+     color: #626262;
+     font-size: 1.4rem; }
     #contents #main th {
-    padding-right: 20px; } }
+     padding-right: 20px; } }
+    #contents #main h2.company_title {
+     margin-bottom: 0px; }
     
  /** モバイル版sub_cover**/
-    @media (max-width: 550px){   
+  @media (max-width: 550px){   
     #contents {
-      padding-top: 20px; } 
+     padding-top: 20px; } 
     h2 {
-      color: #42b9d0;
-      border-bottom:
-      3px solid #42b9d0;
-      font-size: 15px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding-bottom: 15px;
-      margin-bottom: 0} 
+     color: #42b9d0;
+     border-bottom:
+     3px solid #42b9d0;
+
+     font-size: 1.5rem;
+     font-weight: bold;
+     padding-bottom: 15px;
+     margin-bottom: 0; } 
+    #contents #main th, #contents #main td {
+     padding: 20px 0;
+     color: #626262;
+     font-size: 1.4rem; }
     #contents #main th {
-      padding-right: 20px; }
-    #contents #main th {
-      padding: 20px 0;
-      color: #626262;
-      font-size: 1.4rem; } 
-      #contents #main td {
-      padding: 20px 0;
-      color: #626262;
-      font-size: 1.4rem; } }
-     
-       
-   
+     padding-right: 20px; } }
+    
     /** sidebar **/
   @media (min-width: 550px) {
     #contents #sidebar .pc_sidemenu h3 {
-    color: #42b9d0;
-    
-    font-size: 1.4rem;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-    background-color: #f3f9fb;
-    padding: 15px;
-    margin-bottom: 0px; } }
-    
-  @media (min-width: 550px) {
-     #sidebar li {
-    list-style: none;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: left center;
-    text-align:left;
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 0px;
-    padding:10px 10px 10px 20px;
-    background-image: url("../images/top/side_arrow.png");
-    background-size: 4px 8px;
-    line-height: 30px;} }
+     color: #42b9d0;
+     font-size: 1.4rem;
+     letter-spacing: 0.2rem;
+     font-weight: bold;
+     background-color: #f3f9fb;
+     padding: 15px;
+     margin-bottom: 0px; } 
+    #sidebar li {
+     list-style: none;
+     display: block;
+     background-repeat: no-repeat;
+     background-position: left center;
+     text-align:left;
+     border-bottom: 1px solid #e5e5e5;
+     margin-bottom: 0px;
+     padding:10px 10px 10px 20px;
+     background-image: url("../images/top/side_arrow.png");
+     background-size: 4px 8px;
+     line-height: 30px;} }
   @media screen and (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 2dppx) {  
     #sidebar ul {
-    background-image : url("..images/top/side_arrow@2x.png") } }
+     background-image : url("..images/top/side_arrow@2x.png") } }
   
   /** モバイル版sidebar **/
   @media (max-width: 550px) {   
     #sidebar li ,.pc_sidemenu h3{
-    display: none; } }#sidebar li a{
-  text-decoration: none; }
+     display: none; } }#sidebar li a{
+     text-decoration: none; }
   
 
  
